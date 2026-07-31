@@ -36,7 +36,9 @@
   });
 
   document.querySelectorAll("[data-price]").forEach((element) => {
-    element.textContent = `${config.priceUsd || "7.99"} $`;
+    const amount = Number(config.priceUsd || "7.99");
+    const locale = element.dataset.priceLocale === "de" ? "de-DE" : "en-US";
+    element.textContent = new Intl.NumberFormat(locale, { style: "currency", currency: "USD" }).format(amount);
   });
 
   const navToggle = document.querySelector("[data-nav-toggle]");

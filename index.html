@@ -3,148 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AllianceHQ – Discord Alliance Management</title>
+  <title>AllianceHQ – Discord-Allianzverwaltung</title>
   <meta name="description" content="Events, Terminabstimmungen, Mitglieder, Rollen, Abwesenheiten und Zeitzonen für Gaming-Allianzen – direkt in Discord und im Web-Dashboard.">
   <meta property="og:title" content="AllianceHQ – Coordinate. Schedule. Lead.">
   <meta property="og:description" content="Die Kommandozentrale für Gaming-Allianzen auf Discord.">
   <meta property="og:image" content="https://alliance-hq.com/assets/hero-banner.png">
-  <meta property="og:url" content="https://alliance-hq.com">
+  <meta property="og:url" content="https://alliance-hq.com/">
+  <meta property="og:locale" content="de_DE">
   <meta name="theme-color" content="#07131f">
   <link rel="icon" href="assets/logo-128.png">
   <link rel="canonical" href="https://alliance-hq.com/">
-  <link rel="stylesheet" href="assets/style.css?v=1.0.0">
+  <link rel="alternate" hreflang="de" href="https://alliance-hq.com/">
+  <link rel="alternate" hreflang="en" href="https://alliance-hq.com/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://alliance-hq.com/">
+  <link rel="stylesheet" href="assets/style.css?v=1.1.0">
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/">
-      <img src="assets/logo-128.png" alt="AllianceHQ Logo">
-      <span class="brand-copy"><span>AllianceHQ</span><small>Coordinate. Schedule. Lead.</small></span>
-    </a>
-    <button class="nav-toggle" data-nav-toggle aria-label="Menü öffnen">☰</button>
+    <a class="brand" href="/"><img src="assets/logo-128.png" alt="AllianceHQ Logo"><span class="brand-copy"><span>AllianceHQ</span><small>Coordinate. Schedule. Lead.</small></span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Menu">☰</button>
     <nav class="nav" data-nav>
-      <a href="#features">Funktionen</a>
-      <a href="#dashboard">Dashboard</a>
-      <a href="#pricing">Preise</a>
-      <a href="#faq">FAQ</a>
+      <a href="#features">Funktionen</a><a href="#dashboard">Dashboard</a><a href="#pricing">Preise</a><a href="#faq">FAQ</a>
+      <a class="language-link" href="/en.html" lang="en">EN</a>
       <a class="button secondary" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a>
       <a class="button primary" data-link="install" href="#">Bot hinzufügen</a>
     </nav>
   </div>
 </header>
 <main>
-  <section class="hero">
-    <div class="container">
-      <div class="hero-card">
-        <img class="hero-image" src="assets/hero-banner.png" alt="AllianceHQ Kommandozentrale">
-        <div class="hero-content">
-          <span class="eyebrow">Discord Alliance Management</span>
-          <h1>Führe deine Allianz. Nicht deine Tabellen.</h1>
-          <p>AllianceHQ verbindet Discord-Bot und Web-Dashboard für Events, Terminabstimmungen, Mitglieder, Rollen, Abwesenheiten, Teilnahmequoten und weltweite Zeitzonen.</p>
-          <div class="hero-actions">
-            <a class="button discord large" data-link="install" href="#">Discord-Bot hinzufügen</a>
-            <a class="button primary large" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard öffnen</a>
-            <a class="button secondary large" data-link="store" href="#">AllianceHQ Pro</a>
-          </div>
-          <p class="hero-note">Free dauerhaft nutzbar · Pro serverweit für <strong data-price>7.99 $</strong> pro Monat · Kauf über Discord</p>
-        </div>
-      </div>
-      <div class="trust-strip">
-        <article><strong>Discord-nativ</strong><span>Buttons, Slash-Commands und Rollen</span></article>
-        <article><strong>Web-Dashboard</strong><span>Komplette Verwaltung im Browser</span></article>
-        <article><strong>Zeitzonenfähig</strong><span>Globale Teams ohne Terminchaos</span></article>
-        <article><strong>Serverweites Pro</strong><span>Ein Abo für die ganze Allianz</span></article>
-      </div>
+<section class="hero"><div class="container">
+  <div class="hero-card">
+    <div class="hero-media"><img src="assets/hero-banner.png" alt="AllianceHQ command center banner"></div>
+    <div class="hero-content">
+      <div class="hero-copy"><span class="eyebrow">Discord-Allianzverwaltung</span><h1>Führe deine Allianz. Nicht deine Tabellen.</h1><p>AllianceHQ verbindet Discord-Bot und Web-Dashboard für Events, Terminabstimmungen, Mitglieder, Rollen, Abwesenheiten, Teilnahmequoten und weltweite Zeitzonen.</p></div>
+      <div class="hero-cta"><div class="hero-actions"><a class="button discord large" data-link="install" href="#">Discord-Bot hinzufügen</a><a class="button primary large" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard öffnen</a><a class="button secondary large" data-link="store" href="#">AllianceHQ Pro</a></div><p class="hero-note">Free dauerhaft nutzbar · Pro serverweit für <strong data-price data-price-locale="de">7,99 $</strong> pro Monat · Kauf über Discord</p></div>
     </div>
-  </section>
-
-  <section class="section" id="features">
-    <div class="container">
-      <div class="section-heading"><span class="eyebrow">Eine Plattform</span><h2>Alles, was eine Allianzleitung täglich braucht</h2><p>Die Mitglieder bleiben in Discord. Die Leitung bekommt zusätzlich ein übersichtliches Dashboard.</p></div>
-      <div class="feature-grid">
-        <article class="feature-card"><span class="feature-icon">📅</span><h3>Events & Serien</h3><p>Einmalige und wiederkehrende Events, mehrere Erinnerungen, Rollen-Pings und Teilnahmebuttons.</p></article>
-        <article class="feature-card"><span class="feature-icon">🗳️</span><h3>Terminabstimmungen</h3><p>Bis zu fünf Optionen, Mehrfachauswahl, Stimmenauswertung und Gewinner direkt als Event übernehmen.</p></article>
-        <article class="feature-card"><span class="feature-icon">👥</span><h3>Mitgliederverwaltung</h3><p>Discord-Mitglieder importieren, Ränge, Power, Aktivstatus und Abwesenheiten verwalten.</p></article>
-        <article class="feature-card"><span class="feature-icon">🌍</span><h3>Zeitzonen & Heatmap</h3><p>Persönliche Verfügbarkeiten werden automatisch auf die Server-Zeitzone umgerechnet.</p></article>
-        <article class="feature-card"><span class="feature-icon">📊</span><h3>Teilnahmeauswertung</h3><p>Anwesend, entschuldigt oder abwesend markieren und faire Quoten über mehrere Zeiträume erhalten.</p></article>
-        <article class="feature-card"><span class="feature-icon">🎭</span><h3>Discord-Rollen</h3><p>Rollen direkt im Dashboard vergeben, Managerrolle festlegen und Rollen-Pings vorbereiten.</p></article>
-        <article class="feature-card"><span class="feature-icon">✦</span><h3>Vorlagen</h3><p>Wiederkehrende Event- und Abstimmungstypen als Presets speichern und in Sekunden veröffentlichen.</p></article>
-        <article class="feature-card"><span class="feature-icon">🩺</span><h3>Systemcheck</h3><p>Datenbank, Discord-Verbindung, Rechte, Intents, Rollen und letzte Aktionen automatisch prüfen.</p></article>
-        <article class="feature-card"><span class="feature-icon">🔐</span><h3>Datenschutzkontrolle</h3><p>Datenexport, persönliche Löschung und Server-Reset direkt über den Bot.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="dashboard">
-    <div class="container dashboard-showcase">
-      <div class="dashboard-window">
-        <div class="window-bar"><i></i><i></i><i></i></div>
-        <div class="window-grid">
-          <article><strong>42</strong><span>aktive Mitglieder</span></article>
-          <article><strong>88 %</strong><span>Teilnahmequote</span></article>
-          <article><strong>6</strong><span>kommende Events</span></article>
-          <article><strong>21:00</strong><span>beste Allianzzeit</span></article>
-        </div>
-      </div>
-      <div class="showcase-copy">
-        <span class="eyebrow">Dashboard</span>
-        <h2>Discord für Mitglieder. Übersicht für die Leitung.</h2>
-        <p>Der Bot und das Dashboard arbeiten mit derselben Datenbank. Änderungen werden nicht doppelt gepflegt.</p>
-        <ul class="check-list">
-          <li>Sicherer Discord-OAuth-Login</li>
-          <li>Nur Server anzeigen, die du verwalten darfst</li>
-          <li>Mobil und am Desktop nutzbar</li>
-          <li>Direkter Systemstatus und Tarifübersicht</li>
-        </ul>
-        <a class="button primary" data-link="dashboard" href="https://dashboard.alliance-hq.com">Zum Dashboard</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="pricing">
-    <div class="container">
-      <div class="section-heading"><span class="eyebrow">Klare Preise</span><h2>Starte kostenlos. Schalte die ganze Allianz frei.</h2><p>AllianceHQ Pro ist ein serverweites Discord-Abonnement. Discord übernimmt Checkout, Abrechnung und Belege.</p></div>
-      <div class="pricing-grid">
-        <article class="price-card">
-          <h3>Free</h3><div class="price"><strong>0 $</strong><span>dauerhaft</span></div>
-          <p>Für kleine Allianzen und zum Kennenlernen.</p>
-          <ul><li>30 aktive Mitglieder</li><li>5 kommende Events</li><li>1 Erinnerung pro Event</li><li>3 Vorlagen</li><li>Kernfunktionen im Bot und Dashboard</li></ul>
-          <a class="button secondary" data-link="install" href="#">Kostenlos hinzufügen</a>
-        </article>
-        <article class="price-card pro">
-          <span class="price-badge">Serverweit</span>
-          <h3>AllianceHQ Pro</h3><div class="price"><strong data-price>7.99 $</strong><span>/ Monat</span></div>
-          <p>Für aktive Allianzen mit regelmäßigen Events und mehreren Führungskräften.</p>
-          <ul><li>Bis zu 500 aktive Mitglieder</li><li>Bis zu 250 kommende Events</li><li>3 Erinnerungen pro Event</li><li>30 Vorlagen</li><li>Serienevents und Rollen-Pings</li><li>Ein Abo für den gesamten Discord-Server</li></ul>
-          <a class="button primary" data-link="store" href="#">Über Discord abonnieren</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-heading"><span class="eyebrow">FAQ</span><h2>Häufige Fragen</h2></div>
-      <div class="faq">
-        <details><summary>Müssen alle Mitglieder das Dashboard benutzen?</summary><p>Nein. Mitglieder können weiterhin vollständig über Discord abstimmen und teilnehmen. Das Dashboard richtet sich hauptsächlich an die Allianzleitung.</p></details>
-        <details><summary>Gilt Pro nur für eine Person?</summary><p>Nein. AllianceHQ Pro wird als Guild Subscription für einen Discord-Server angeboten und schaltet die Pro-Funktionen serverweit frei.</p></details>
-        <details><summary>Wo kann das Abo gekündigt werden?</summary><p>Abonnements werden direkt über Discord verwaltet und können dort in den Abonnement-Einstellungen gekündigt werden.</p></details>
-        <details><summary>Speichert AllianceHQ Zahlungsdaten?</summary><p>Nein. Checkout und Abrechnung erfolgen über Discord. AllianceHQ verarbeitet lediglich die Discord-Entitlement-Information, die den Tarifzugang bestätigt.</p></details>
-        <details><summary>Ist AllianceHQ an ein bestimmtes Spiel gebunden?</summary><p>Nein. AllianceHQ eignet sich für Allianzen, Clans, Gilden und andere koordinierte Gaming-Communities.</p></details>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="cta">
-    <div class="container"><div class="cta-card"><div><h2>Bereit für weniger Organisationschaos?</h2><p>AllianceHQ hinzufügen, Dashboard öffnen und die erste Allianzveranstaltung veröffentlichen.</p></div><div class="hero-actions"><a class="button discord large" data-link="install" href="#">Bot hinzufügen</a><a class="button primary large" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a></div></div></div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="brand"><img src="assets/logo-128.png" alt=""><span class="brand-copy"><span>AllianceHQ</span><small>by Kamilunavo</small></span></div>
-    <div class="footer-links"><a href="imprint.html">Impressum</a><a href="privacy.html">Datenschutz</a><a href="terms.html">Nutzungsbedingungen</a><a data-link="support" href="#">Support</a><a data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a></div>
   </div>
-</footer>
-<script src="site-config.js"></script><script src="assets/site.js?v=1.0.0"></script>
-</body></html>
+  <div class="trust-strip"><article><strong>Discord-nativ</strong><span>Buttons, Slash-Commands und Rollen</span></article><article><strong>Web-Dashboard</strong><span>Komplette Verwaltung im Browser</span></article><article><strong>Zeitzonenfähig</strong><span>Globale Teams ohne Terminchaos</span></article><article><strong>Serverweites Pro</strong><span>Ein Abo für die ganze Allianz</span></article></div>
+</div></section>
+<section class="section" id="features"><div class="container"><div class="section-heading"><span class="eyebrow">Eine Plattform</span><h2>Alles, was eine Allianzleitung täglich braucht</h2><p>Die Mitglieder bleiben in Discord. Die Leitung bekommt zusätzlich ein übersichtliches Dashboard.</p></div><div class="feature-grid"><article class="feature-card"><span class="feature-icon">📅</span><h3>Events & Serien</h3><p>Einmalige und wiederkehrende Events, mehrere Erinnerungen, Rollen-Pings und Teilnahmebuttons.</p></article>
+<article class="feature-card"><span class="feature-icon">🗳️</span><h3>Terminabstimmungen</h3><p>Bis zu fünf Optionen, Mehrfachauswahl, Stimmenauswertung und Gewinner direkt als Event übernehmen.</p></article>
+<article class="feature-card"><span class="feature-icon">👥</span><h3>Mitgliederverwaltung</h3><p>Discord-Mitglieder importieren, Ränge, Power, Aktivstatus und Abwesenheiten verwalten.</p></article>
+<article class="feature-card"><span class="feature-icon">🌍</span><h3>Zeitzonen & Heatmap</h3><p>Persönliche Verfügbarkeiten werden automatisch auf die Server-Zeitzone umgerechnet.</p></article>
+<article class="feature-card"><span class="feature-icon">📊</span><h3>Teilnahmeauswertung</h3><p>Anwesend, entschuldigt oder abwesend markieren und faire Quoten über mehrere Zeiträume erhalten.</p></article>
+<article class="feature-card"><span class="feature-icon">🎭</span><h3>Discord-Rollen</h3><p>Rollen direkt im Dashboard vergeben, Managerrolle festlegen und Rollen-Pings vorbereiten.</p></article>
+<article class="feature-card"><span class="feature-icon">✦</span><h3>Vorlagen</h3><p>Wiederkehrende Event- und Abstimmungstypen als Presets speichern und in Sekunden veröffentlichen.</p></article>
+<article class="feature-card"><span class="feature-icon">🩺</span><h3>Systemcheck</h3><p>Datenbank, Discord-Verbindung, Rechte, Intents, Rollen und letzte Aktionen automatisch prüfen.</p></article>
+<article class="feature-card"><span class="feature-icon">🔐</span><h3>Datenschutzkontrolle</h3><p>Datenexport, persönliche Löschung und Server-Reset direkt über den Bot.</p></article></div></div></section>
+<section class="section" id="dashboard"><div class="container dashboard-showcase"><div class="dashboard-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="window-grid"><article><strong>42</strong><span>aktive Mitglieder</span></article><article><strong>88 %</strong><span>Teilnahmequote</span></article><article><strong>6</strong><span>kommende Events</span></article><article><strong>21:00</strong><span>beste Allianzzeit</span></article></div></div><div class="showcase-copy"><span class="eyebrow">Dashboard</span><h2>Discord für Mitglieder. Übersicht für die Leitung.</h2><p>Der Bot und das Dashboard arbeiten mit derselben Datenbank. Änderungen werden nicht doppelt gepflegt.</p><ul class="check-list"><li>Sicherer Discord-OAuth-Login</li><li>Nur Server anzeigen, die du verwalten darfst</li><li>Mobil und am Desktop nutzbar</li><li>Direkter Systemstatus und Tarifübersicht</li></ul><a class="button primary" data-link="dashboard" href="https://dashboard.alliance-hq.com">Zum Dashboard</a></div></div></section>
+<section class="section" id="pricing"><div class="container"><div class="section-heading"><span class="eyebrow">Klare Preise</span><h2>Starte kostenlos. Schalte die ganze Allianz frei.</h2><p>AllianceHQ Pro ist ein serverweites Discord-Abonnement. Discord übernimmt Checkout, Abrechnung und Belege.</p></div><div class="pricing-grid"><article class="price-card"><h3>Free</h3><div class="price"><strong>0 $</strong><span>dauerhaft</span></div><p>Für kleine Allianzen und zum Kennenlernen.</p><ul><li>30 aktive Mitglieder</li><li>5 kommende Events</li><li>1 Erinnerung pro Event</li><li>3 Vorlagen</li><li>Kernfunktionen im Bot und Dashboard</li></ul><a class="button secondary" data-link="install" href="#">Kostenlos hinzufügen</a></article><article class="price-card pro"><span class="price-badge">Serverweit</span><h3>AllianceHQ Pro</h3><div class="price"><strong data-price data-price-locale="de">7,99 $</strong><span>/ Monat</span></div><p>Für aktive Allianzen mit regelmäßigen Events und mehreren Führungskräften.</p><ul><li>Bis zu 500 aktive Mitglieder</li><li>Bis zu 250 kommende Events</li><li>3 Erinnerungen pro Event</li><li>30 Vorlagen</li><li>Serienevents und Rollen-Pings</li><li>Ein Abo für den gesamten Discord-Server</li></ul><a class="button primary" data-link="store" href="#">Über Discord abonnieren</a></article></div></div></section>
+<section class="section" id="faq"><div class="container"><div class="section-heading"><span class="eyebrow">FAQ</span><h2>Häufige Fragen</h2></div><div class="faq"><details><summary>Müssen alle Mitglieder das Dashboard benutzen?</summary><p>Nein. Mitglieder können weiterhin vollständig über Discord abstimmen und teilnehmen. Das Dashboard richtet sich hauptsächlich an die Allianzleitung.</p></details><details><summary>Gilt Pro nur für eine Person?</summary><p>Nein. AllianceHQ Pro schaltet die Pro-Funktionen für den ausgewählten Discord-Server frei.</p></details><details><summary>Wo kann das Abo gekündigt werden?</summary><p>Abonnements werden direkt über Discord verwaltet und können dort in den Abonnement-Einstellungen gekündigt werden.</p></details><details><summary>Speichert AllianceHQ Zahlungsdaten?</summary><p>Nein. Checkout und Abrechnung erfolgen über Discord. AllianceHQ verarbeitet lediglich die Discord-Berechtigung, die den Tarifzugang bestätigt.</p></details><details><summary>Ist AllianceHQ an ein bestimmtes Spiel gebunden?</summary><p>Nein. AllianceHQ eignet sich für Allianzen, Clans, Gilden und andere koordinierte Gaming-Communities.</p></details></div></div></section>
+<section class="cta"><div class="container"><div class="cta-card"><div><h2>Bereit für weniger Organisationschaos?</h2><p>AllianceHQ hinzufügen, Dashboard öffnen und die erste Allianzveranstaltung veröffentlichen.</p></div><div class="hero-actions"><a class="button discord large" data-link="install" href="#">Bot hinzufügen</a><a class="button primary large" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><span>© 2026 Kamilunavo · AllianceHQ</span><div class="footer-links"><a href="privacy.html">Datenschutz</a><a href="terms.html">Nutzungsbedingungen</a><a href="imprint.html">Impressum</a><a data-link="support" href="#">Support</a><a href="/en.html">EN</a></div></div></footer>
+<script src="site-config.js"></script><script src="assets/site.js?v=1.1.0"></script></body></html>
