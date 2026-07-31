@@ -1,64 +1,49 @@
-# AllianceHQ Website – GitHub Pages
+# AllianceHQ Website v1.0
 
-Static bilingual landing page and legal pages for **AllianceHQ by Kamilunavo**.
+Statische Launch-Website für GitHub Pages und `alliance-hq.com`.
 
-## 1. Insert Discord links
+## 1. Vor dem Upload konfigurieren
 
-Open `config.js` and replace:
+In `site-config.js` ersetzen:
 
-```js
-installUrl: "PASTE_DISCORD_INSTALL_LINK_HERE",
-supportUrl: "PASTE_SUPPORT_SERVER_INVITE_HERE",
-```
+- `YOUR_DISCORD_APP_ID` → Application ID aus Discord Developer Portal → General Information
+- `YOUR_DISCORD_PRO_SKU_ID` → Guild-Subscription-SKU-ID vom Typ 5
+- `YOUR_SUPPORT_DISCORD_INVITE` → permanenter Einladungslink des Support-Servers
 
-The email address is already set to `acciento89@gmail.com`.
+## 2. GitHub Pages
 
-## 2. Upload to GitHub
+1. Alle Dateien in das Root-Verzeichnis des Website-Repositories hochladen.
+2. Repository → Settings → Pages.
+3. Source: `Deploy from a branch`.
+4. Branch: `main`, Ordner: `/ (root)`.
+5. Custom domain: `alliance-hq.com`.
+6. Nach erfolgreichem DNS-Check `Enforce HTTPS` aktivieren.
 
-Recommended repository name:
+Die Datei `CNAME` ist bereits enthalten.
 
-```text
-alliancehq-website
-```
+## 3. DNS für die Hauptdomain
 
-Upload all files from this folder to the repository root.
+Beim Domainanbieter vier A-Records für `@` anlegen:
 
-## 3. Enable GitHub Pages
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
 
-1. Open repository **Settings**.
-2. Select **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/(root)**.
-5. Save.
+Vorhandene widersprüchliche A-, AAAA-, ALIAS- oder Weiterleitungsrecords für `@` entfernen.
+Der bestehende CNAME für `dashboard.alliance-hq.com` bleibt unverändert.
 
-Expected URL for GitHub user `acciento89-bot`:
-
-```text
-https://acciento89-bot.github.io/alliancehq-website/
-```
+Optional: `www` als CNAME auf `<GitHub-Benutzername>.github.io` setzen.
 
 ## 4. Discord Developer Portal
 
-After the site is live, use:
+General Information / App Directory:
 
-```text
-Privacy Policy: https://acciento89-bot.github.io/alliancehq-website/privacy.html
-Terms of Service: https://acciento89-bot.github.io/alliancehq-website/terms.html
-```
+- Website: `https://alliance-hq.com`
+- Terms of Service: `https://alliance-hq.com/terms.html`
+- Privacy Policy: `https://alliance-hq.com/privacy.html`
+- Support Server: eigener AllianceHQ-Supportserver
 
-## Files
+## Rechtlicher Hinweis
 
-- `index.html` – bilingual landing page
-- `privacy.html` – bilingual privacy policy
-- `terms.html` – bilingual terms
-- `imprint.html` – bilingual imprint
-- `contact.html` – contact and support
-- `config.js` – Discord links and contact email
-- `styles.css` – complete responsive design
-- `app.js` – language toggle and link configuration
-- `404.html` – error page
-- `.nojekyll` – disables Jekyll processing
-
-## Important
-
-The legal pages are drafted for the current AllianceHQ functionality as of 30 July 2026. Update them whenever hosting providers, collected data, retention periods, pricing or bot functionality changes. They are not a substitute for individual legal advice.
+Impressum, Datenschutz und Nutzungsbedingungen wurden an die bekannte technische Struktur angepasst. Vor dem ersten zahlenden Kunden ist eine professionelle rechtliche Prüfung empfehlenswert. Steuernummer oder USt-IdNr. nur ergänzen, wenn sie erteilt wurde und veröffentlicht werden muss.

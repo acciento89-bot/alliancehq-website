@@ -1,47 +1,150 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="AllianceHQ is a Discord bot for alliance events, scheduling, time zones, attendance and member management."><meta name="theme-color" content="#07121e"><title>AllianceHQ · Coordinate. Schedule. Lead.</title><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css"><meta property="og:title" content="AllianceHQ · Coordinate. Schedule. Lead."><meta property="og:description" content="The Discord command center for gaming alliances."><meta property="og:image" content="assets/alliancehq-banner.png"></head><body class="lang-en">
-<a class="skip-link" href="#main">Skip to content</a>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AllianceHQ – Discord Alliance Management</title>
+  <meta name="description" content="Events, Terminabstimmungen, Mitglieder, Rollen, Abwesenheiten und Zeitzonen für Gaming-Allianzen – direkt in Discord und im Web-Dashboard.">
+  <meta property="og:title" content="AllianceHQ – Coordinate. Schedule. Lead.">
+  <meta property="og:description" content="Die Kommandozentrale für Gaming-Allianzen auf Discord.">
+  <meta property="og:image" content="https://alliance-hq.com/assets/hero-banner.png">
+  <meta property="og:url" content="https://alliance-hq.com">
+  <meta name="theme-color" content="#07131f">
+  <link rel="icon" href="assets/logo-128.png">
+  <link rel="canonical" href="https://alliance-hq.com/">
+  <link rel="stylesheet" href="assets/style.css?v=1.0.0">
+</head>
+<body>
 <header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html"><img src="assets/app-icon.png" alt=""><span>Alliance</span><span>HQ</span></a>
-    <button class="menu-button" data-menu-button aria-label="Menu">☰</button>
-    <nav class="nav-links" data-menu aria-label="Main navigation">
-      <a href="index.html#features" data-de="Funktionen" data-en="Features">Features</a>
-      <a href="index.html#how" data-de="Ablauf" data-en="How it works">How it works</a>
-      <a href="index.html#pricing" data-de="Preise" data-en="Pricing">Pricing</a>
-      <a href="contact.html" data-de="Support" data-en="Support">Support</a>
-      <div class="lang-switch" aria-label="Language"><button data-lang-button="de">DE</button><button data-lang-button="en">EN</button></div>
-      <a class="btn btn-primary btn-small" data-install-link href="#" data-de="Zu Discord" data-en="Add to Discord">Add to Discord</a>
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img src="assets/logo-128.png" alt="AllianceHQ Logo">
+      <span class="brand-copy"><span>AllianceHQ</span><small>Coordinate. Schedule. Lead.</small></span>
+    </a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Menü öffnen">☰</button>
+    <nav class="nav" data-nav>
+      <a href="#features">Funktionen</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#pricing">Preise</a>
+      <a href="#faq">FAQ</a>
+      <a class="button secondary" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a>
+      <a class="button primary" data-link="install" href="#">Bot hinzufügen</a>
     </nav>
   </div>
 </header>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <img class="hero-image" src="assets/hero-banner.png" alt="AllianceHQ Kommandozentrale">
+        <div class="hero-content">
+          <span class="eyebrow">Discord Alliance Management</span>
+          <h1>Führe deine Allianz. Nicht deine Tabellen.</h1>
+          <p>AllianceHQ verbindet Discord-Bot und Web-Dashboard für Events, Terminabstimmungen, Mitglieder, Rollen, Abwesenheiten, Teilnahmequoten und weltweite Zeitzonen.</p>
+          <div class="hero-actions">
+            <a class="button discord large" data-link="install" href="#">Discord-Bot hinzufügen</a>
+            <a class="button primary large" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard öffnen</a>
+            <a class="button secondary large" data-link="store" href="#">AllianceHQ Pro</a>
+          </div>
+          <p class="hero-note">Free dauerhaft nutzbar · Pro serverweit für <strong data-price>7.99 $</strong> pro Monat · Kauf über Discord</p>
+        </div>
+      </div>
+      <div class="trust-strip">
+        <article><strong>Discord-nativ</strong><span>Buttons, Slash-Commands und Rollen</span></article>
+        <article><strong>Web-Dashboard</strong><span>Komplette Verwaltung im Browser</span></article>
+        <article><strong>Zeitzonenfähig</strong><span>Globale Teams ohne Terminchaos</span></article>
+        <article><strong>Serverweites Pro</strong><span>Ein Abo für die ganze Allianz</span></article>
+      </div>
+    </div>
+  </section>
 
-<main id="main">
-<section class="hero"><div class="container hero-grid"><div><div class="eyebrow" data-de="Discord-Allianzmanagement" data-en="Discord alliance management">Discord alliance management</div><h1 data-de="Koordiniere deine Allianz. Ohne Chaos." data-en="Coordinate your alliance. Without the chaos.">Coordinate your alliance. Without the chaos.</h1><p class="hero-copy" data-de="AllianceHQ bündelt Events, Terminabstimmungen, Zeitzonen, Erinnerungen, Mitglieder und Teilnahmeauswertungen direkt in Discord." data-en="AllianceHQ brings events, scheduling polls, time zones, reminders, members and attendance reports together directly inside Discord.">AllianceHQ brings events, scheduling polls, time zones, reminders, members and attendance reports together directly inside Discord.</p><div class="hero-actions"><a class="btn btn-primary" data-install-link href="#" data-de="＋ AllianceHQ hinzufügen" data-en="＋ Add AllianceHQ">＋ Add AllianceHQ</a><a class="btn btn-secondary" data-support-link href="#" data-de="Support-Server" data-en="Support server">Support server</a></div><div class="trust-row"><span data-de="Kostenlos starten" data-en="Free to start">Free to start</span><span data-de="Einrichtung per /start" data-en="Setup with /start">Setup with /start</span><span data-de="DE & EN" data-en="DE & EN">DE & EN</span></div></div><div class="hero-visual"><div class="hero-card"><img src="assets/alliancehq-banner.png" alt="AllianceHQ banner"><div class="hero-mini"><div><strong>15+</strong><span data-de="Befehlsbereiche" data-en="Command areas">Command areas</span></div><div><strong>24/7</strong><span data-de="Railway-Hosting" data-en="Railway hosting">Railway hosting</span></div><div><strong>Global</strong><span data-de="Zeitzonen" data-en="Time zones">Time zones</span></div></div></div></div></div></section>
-<section class="section section-soft" id="features"><div class="container"><div class="section-head"><div class="eyebrow" data-de="Alles an einem Ort" data-en="Everything in one place">Everything in one place</div><h2 data-de="Gebaut für internationale Gaming-Allianzen." data-en="Built for international gaming alliances.">Built for international gaming alliances.</h2><p data-de="Keine Tabellen, keine verlorenen Chatnachrichten und kein manuelles Umrechnen von Uhrzeiten." data-en="No spreadsheets, lost chat messages or manual time-zone calculations.">No spreadsheets, lost chat messages or manual time-zone calculations.</p></div><div class="grid features">
-<div class="card"><div class="card-icon">📅</div><h3 data-de="Events & Serien" data-en="Events & series">Events & series</h3><p data-de="Einmalige und wiederkehrende Events mit Zu- und Absagen." data-en="One-off and recurring events with RSVP buttons.">One-off and recurring events with RSVP buttons.</p></div>
-<div class="card"><div class="card-icon">🗳️</div><h3 data-de="Terminabstimmungen" data-en="Scheduling polls">Scheduling polls</h3><p data-de="Mehrere Optionen, Mehrfachauswahl und automatische Gewinnerzeit." data-en="Multiple options, multi-select voting and automatic winner detection.">Multiple options, multi-select voting and automatic winner detection.</p></div>
-<div class="card"><div class="card-icon">🌍</div><h3 data-de="Lokale Zeitzonen" data-en="Local time zones">Local time zones</h3><p data-de="Discord zeigt jedem Mitglied automatisch seine lokale Eventzeit." data-en="Discord automatically displays each member's local event time.">Discord automatically displays each member's local event time.</p></div>
-<div class="card"><div class="card-icon">⏰</div><h3 data-de="Erinnerungen" data-en="Reminders">Reminders</h3><p data-de="Mehrere Erinnerungen und optionale Rollen-Pings für wichtige Termine." data-en="Multiple reminders and optional role mentions for important events.">Multiple reminders and optional role mentions for important events.</p></div>
-<div class="card"><div class="card-icon">👥</div><h3 data-de="Mitglieder & Abwesenheiten" data-en="Members & absences">Members & absences</h3><p data-de="Ränge, Power, Aktivstatus, Urlaub und Abwesenheiten an einem Ort." data-en="Ranks, power, activity status, vacation and absences in one place.">Ranks, power, activity status, vacation and absences in one place.</p></div>
-<div class="card"><div class="card-icon">📊</div><h3 data-de="Teilnahme & Statistik" data-en="Attendance & analytics">Attendance & analytics</h3><p data-de="Tatsächliche Anwesenheit, faire Quoten und datensparsame Nutzungsauswertung." data-en="Actual attendance, fair participation rates and privacy-conscious usage analytics.">Actual attendance, fair participation rates and privacy-conscious usage analytics.</p></div>
-</div></div></section>
-<section class="section" id="how"><div class="container"><div class="section-head"><div class="eyebrow" data-de="In drei Schritten" data-en="Three simple steps">Three simple steps</div><h2 data-de="In wenigen Minuten einsatzbereit." data-en="Ready in a few minutes.">Ready in a few minutes.</h2></div><div class="grid steps"><div class="card step"><h3 data-de="Bot installieren" data-en="Install the bot">Install the bot</h3><p data-de="Füge AllianceHQ mit dem öffentlichen Discord-Link deinem Server hinzu." data-en="Add AllianceHQ to your server using the public Discord install link.">Add AllianceHQ to your server using the public Discord install link.</p></div><div class="card step"><h3 data-de="Server einrichten" data-en="Configure the server">Configure the server</h3><p data-de="Starte `/start` und wähle Sprache, Zeitzone, Event-Kanal und Managerrolle." data-en="Run `/start` and choose language, time zone, event channel and manager role.">Run `/start` and choose language, time zone, event channel and manager role.</p></div><div class="card step"><h3 data-de="Allianz koordinieren" data-en="Coordinate your alliance">Coordinate your alliance</h3><p data-de="Erstelle Events oder Abstimmungen und lasse AllianceHQ den Rest organisieren." data-en="Create events or scheduling polls and let AllianceHQ handle the rest.">Create events or scheduling polls and let AllianceHQ handle the rest.</p></div></div></div></section>
-<section class="section section-soft" id="pricing"><div class="container"><div class="section-head"><div class="eyebrow" data-de="Klare Tarife" data-en="Simple plans">Simple plans</div><h2 data-de="Kostenlos testen. Später bei Bedarf upgraden." data-en="Start free. Upgrade when you need more.">Start free. Upgrade when you need more.</h2></div><div class="grid pricing"><article class="card price-card"><span class="badge">Free</span><div class="price">€0</div><p data-de="Für kleine Allianzen und erste Tests." data-en="For small alliances and testing.">For small alliances and testing.</p><ul><li data-de="Bis zu 30 aktive Mitglieder" data-en="Up to 30 active members">Up to 30 active members</li><li data-de="Bis zu 5 bevorstehende Events" data-en="Up to 5 upcoming events">Up to 5 upcoming events</li><li data-de="Eine Erinnerung pro Event" data-en="One reminder per event">One reminder per event</li><li data-de="Terminabstimmungen und Zeitzonen" data-en="Scheduling polls and time zones">Scheduling polls and time zones</li><li data-de="Mitglieder und Abwesenheiten" data-en="Members and absences">Members and absences</li></ul><a class="btn btn-secondary" data-install-link href="#" data-de="Kostenlos starten" data-en="Start free">Start free</a></article><article class="card price-card featured"><span class="badge">AllianceHQ Pro</span><div class="price">€7.99 <small data-de="/ Monat" data-en="/ month">/ month</small></div><p data-de="Für aktive und international organisierte Allianzen." data-en="For active and internationally organized alliances.">For active and internationally organized alliances.</p><ul><li data-de="Erweiterte Mitglieder- und Eventlimits" data-en="Higher member and event limits">Higher member and event limits</li><li data-de="Wiederkehrende Events" data-en="Recurring events">Recurring events</li><li data-de="Mehrere Erinnerungen" data-en="Multiple reminders">Multiple reminders</li><li data-de="Rollen-Pings" data-en="Role mentions">Role mentions</li><li data-de="Erweiterte Teilnahme- und Profilanalyse" data-en="Advanced attendance and profile analysis">Advanced attendance and profile analysis</li></ul><a class="btn btn-primary" data-install-link href="#" data-de="Beta kostenlos testen" data-en="Try the beta free">Try the beta free</a><div class="notice" data-de="Beta-Hinweis: Pro wird während der ausgewählten Beta-Phase kostenlos freigeschaltet. Der kostenpflichtige Discord-Tarif startet erst nach Freischaltung der Monetarisierung." data-en="Beta notice: Pro is granted free during the selected beta phase. Paid Discord subscriptions will only start after monetization is enabled.">Beta notice: Pro is granted free during the selected beta phase. Paid Discord subscriptions will only start after monetization is enabled.</div></article></div></div></section>
-<section class="section"><div class="container"><div class="stats-strip"><div class="stat"><strong>/start</strong><span data-de="Geführte Einrichtung" data-en="Guided setup">Guided setup</span></div><div class="stat"><strong>/event</strong><span data-de="Events & Serien" data-en="Events & series">Events & series</span></div><div class="stat"><strong>/availability</strong><span data-de="Beste Zeit finden" data-en="Find the best time">Find the best time</span></div><div class="stat"><strong>/help</strong><span data-de="Hilfe im Bot" data-en="In-bot help">In-bot help</span></div></div></div></section>
-<section class="section section-soft" id="faq"><div class="container faq"><div class="section-head"><div class="eyebrow">FAQ</div><h2 data-de="Häufige Fragen." data-en="Common questions.">Common questions.</h2></div><details><summary data-de="Liest AllianceHQ normale Chatnachrichten?" data-en="Does AllianceHQ read normal chat messages?">Does AllianceHQ read normal chat messages?</summary><p data-de="Nein. AllianceHQ arbeitet mit Slash-Commands, Buttons und den Daten, die Nutzer bewusst in diese Funktionen eingeben." data-en="No. AllianceHQ uses slash commands, buttons and data users deliberately enter into those features.">No. AllianceHQ uses slash commands, buttons and data users deliberately enter into those features.</p></details><details><summary data-de="Wie werden Zeitzonen angezeigt?" data-en="How are time zones displayed?">How are time zones displayed?</summary><p data-de="Eventzeiten werden als Discord-Zeitstempel veröffentlicht. Discord zeigt sie jedem Nutzer passend zur eigenen Geräteeinstellung an." data-en="Event times are published as Discord timestamps, which Discord renders according to each user's device settings.">Event times are published as Discord timestamps, which Discord renders according to each user's device settings.</p></details><details><summary data-de="Ist AllianceHQ schon kostenpflichtig?" data-en="Is AllianceHQ already paid?">Is AllianceHQ already paid?</summary><p data-de="Nein. Ausgewählte Beta-Server erhalten Beta Pro kostenlos. Ein kostenpflichtiges Abonnement wird erst nach der offiziellen Discord-Monetarisierungsfreigabe angeboten." data-en="No. Selected beta servers receive Beta Pro for free. A paid subscription will only be offered after official Discord monetization approval.">No. Selected beta servers receive Beta Pro for free. A paid subscription will only be offered after official Discord monetization approval.</p></details><details><summary data-de="Wie kann ich Daten löschen?" data-en="How can I delete data?">How can I delete data?</summary><p data-de="Nutze `/privacy export` oder `/privacy delete`. Serverbesitzer können die Serverdaten zurücksetzen. Nach Entfernung des Bots werden Serverdaten nach 30 Tagen gelöscht." data-en="Use `/privacy export` or `/privacy delete`. Server owners can reset server data. Server data is deleted 30 days after the bot is removed.">Use `/privacy export` or `/privacy delete`. Server owners can reset server data. Server data is deleted 30 days after the bot is removed.</p></details></div></section>
-<section class="section"><div class="container"><div class="cta"><span class="status-pill" data-de="Öffentliche Beta" data-en="Public beta">Public beta</span><h2 data-de="Deine Allianz braucht weniger Organisation – nicht mehr Chats." data-en="Your alliance needs less admin work—not more chats.">Your alliance needs less admin work—not more chats.</h2><p data-de="Installiere AllianceHQ, starte `/start` und teste alle Beta-Pro-Funktionen mit deiner Community." data-en="Install AllianceHQ, run `/start`, and test the Beta Pro features with your community.">Install AllianceHQ, run `/start`, and test the Beta Pro features with your community.</p><a class="btn btn-primary" data-install-link href="#" data-de="AllianceHQ zu Discord hinzufügen" data-en="Add AllianceHQ to Discord">Add AllianceHQ to Discord</a></div></div></section>
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-heading"><span class="eyebrow">Eine Plattform</span><h2>Alles, was eine Allianzleitung täglich braucht</h2><p>Die Mitglieder bleiben in Discord. Die Leitung bekommt zusätzlich ein übersichtliches Dashboard.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">📅</span><h3>Events & Serien</h3><p>Einmalige und wiederkehrende Events, mehrere Erinnerungen, Rollen-Pings und Teilnahmebuttons.</p></article>
+        <article class="feature-card"><span class="feature-icon">🗳️</span><h3>Terminabstimmungen</h3><p>Bis zu fünf Optionen, Mehrfachauswahl, Stimmenauswertung und Gewinner direkt als Event übernehmen.</p></article>
+        <article class="feature-card"><span class="feature-icon">👥</span><h3>Mitgliederverwaltung</h3><p>Discord-Mitglieder importieren, Ränge, Power, Aktivstatus und Abwesenheiten verwalten.</p></article>
+        <article class="feature-card"><span class="feature-icon">🌍</span><h3>Zeitzonen & Heatmap</h3><p>Persönliche Verfügbarkeiten werden automatisch auf die Server-Zeitzone umgerechnet.</p></article>
+        <article class="feature-card"><span class="feature-icon">📊</span><h3>Teilnahmeauswertung</h3><p>Anwesend, entschuldigt oder abwesend markieren und faire Quoten über mehrere Zeiträume erhalten.</p></article>
+        <article class="feature-card"><span class="feature-icon">🎭</span><h3>Discord-Rollen</h3><p>Rollen direkt im Dashboard vergeben, Managerrolle festlegen und Rollen-Pings vorbereiten.</p></article>
+        <article class="feature-card"><span class="feature-icon">✦</span><h3>Vorlagen</h3><p>Wiederkehrende Event- und Abstimmungstypen als Presets speichern und in Sekunden veröffentlichen.</p></article>
+        <article class="feature-card"><span class="feature-icon">🩺</span><h3>Systemcheck</h3><p>Datenbank, Discord-Verbindung, Rechte, Intents, Rollen und letzte Aktionen automatisch prüfen.</p></article>
+        <article class="feature-card"><span class="feature-icon">🔐</span><h3>Datenschutzkontrolle</h3><p>Datenexport, persönliche Löschung und Server-Reset direkt über den Bot.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dashboard">
+    <div class="container dashboard-showcase">
+      <div class="dashboard-window">
+        <div class="window-bar"><i></i><i></i><i></i></div>
+        <div class="window-grid">
+          <article><strong>42</strong><span>aktive Mitglieder</span></article>
+          <article><strong>88 %</strong><span>Teilnahmequote</span></article>
+          <article><strong>6</strong><span>kommende Events</span></article>
+          <article><strong>21:00</strong><span>beste Allianzzeit</span></article>
+        </div>
+      </div>
+      <div class="showcase-copy">
+        <span class="eyebrow">Dashboard</span>
+        <h2>Discord für Mitglieder. Übersicht für die Leitung.</h2>
+        <p>Der Bot und das Dashboard arbeiten mit derselben Datenbank. Änderungen werden nicht doppelt gepflegt.</p>
+        <ul class="check-list">
+          <li>Sicherer Discord-OAuth-Login</li>
+          <li>Nur Server anzeigen, die du verwalten darfst</li>
+          <li>Mobil und am Desktop nutzbar</li>
+          <li>Direkter Systemstatus und Tarifübersicht</li>
+        </ul>
+        <a class="button primary" data-link="dashboard" href="https://dashboard.alliance-hq.com">Zum Dashboard</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-heading"><span class="eyebrow">Klare Preise</span><h2>Starte kostenlos. Schalte die ganze Allianz frei.</h2><p>AllianceHQ Pro ist ein serverweites Discord-Abonnement. Discord übernimmt Checkout, Abrechnung und Belege.</p></div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Free</h3><div class="price"><strong>0 $</strong><span>dauerhaft</span></div>
+          <p>Für kleine Allianzen und zum Kennenlernen.</p>
+          <ul><li>30 aktive Mitglieder</li><li>5 kommende Events</li><li>1 Erinnerung pro Event</li><li>3 Vorlagen</li><li>Kernfunktionen im Bot und Dashboard</li></ul>
+          <a class="button secondary" data-link="install" href="#">Kostenlos hinzufügen</a>
+        </article>
+        <article class="price-card pro">
+          <span class="price-badge">Serverweit</span>
+          <h3>AllianceHQ Pro</h3><div class="price"><strong data-price>7.99 $</strong><span>/ Monat</span></div>
+          <p>Für aktive Allianzen mit regelmäßigen Events und mehreren Führungskräften.</p>
+          <ul><li>Bis zu 500 aktive Mitglieder</li><li>Bis zu 250 kommende Events</li><li>3 Erinnerungen pro Event</li><li>30 Vorlagen</li><li>Serienevents und Rollen-Pings</li><li>Ein Abo für den gesamten Discord-Server</li></ul>
+          <a class="button primary" data-link="store" href="#">Über Discord abonnieren</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-heading"><span class="eyebrow">FAQ</span><h2>Häufige Fragen</h2></div>
+      <div class="faq">
+        <details><summary>Müssen alle Mitglieder das Dashboard benutzen?</summary><p>Nein. Mitglieder können weiterhin vollständig über Discord abstimmen und teilnehmen. Das Dashboard richtet sich hauptsächlich an die Allianzleitung.</p></details>
+        <details><summary>Gilt Pro nur für eine Person?</summary><p>Nein. AllianceHQ Pro wird als Guild Subscription für einen Discord-Server angeboten und schaltet die Pro-Funktionen serverweit frei.</p></details>
+        <details><summary>Wo kann das Abo gekündigt werden?</summary><p>Abonnements werden direkt über Discord verwaltet und können dort in den Abonnement-Einstellungen gekündigt werden.</p></details>
+        <details><summary>Speichert AllianceHQ Zahlungsdaten?</summary><p>Nein. Checkout und Abrechnung erfolgen über Discord. AllianceHQ verarbeitet lediglich die Discord-Entitlement-Information, die den Tarifzugang bestätigt.</p></details>
+        <details><summary>Ist AllianceHQ an ein bestimmtes Spiel gebunden?</summary><p>Nein. AllianceHQ eignet sich für Allianzen, Clans, Gilden und andere koordinierte Gaming-Communities.</p></details>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta">
+    <div class="container"><div class="cta-card"><div><h2>Bereit für weniger Organisationschaos?</h2><p>AllianceHQ hinzufügen, Dashboard öffnen und die erste Allianzveranstaltung veröffentlichen.</p></div><div class="hero-actions"><a class="button discord large" data-link="install" href="#">Bot hinzufügen</a><a class="button primary large" data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a></div></div></div>
+  </section>
 </main>
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt=""><span>Alliance</span><span>HQ</span></a><p data-de="Events, Zeitzonen, Verfügbarkeiten und Mitgliederverwaltung für Gaming-Allianzen. Ein Dienst von Kamilunavo." data-en="Events, time zones, availability and member management for gaming alliances. A service by Kamilunavo.">Events, time zones, availability and member management for gaming alliances. A service by Kamilunavo.</p></div>
-      <div class="footer-col"><strong data-de="Produkt" data-en="Product">Product</strong><a href="index.html#features" data-de="Funktionen" data-en="Features">Features</a><a href="index.html#pricing" data-de="Preise" data-en="Pricing">Pricing</a><a data-install-link href="#" data-de="Installieren" data-en="Install">Install</a></div>
-      <div class="footer-col"><strong>Support</strong><a href="contact.html" data-de="Kontakt" data-en="Contact">Contact</a><a data-support-link href="#">Discord</a><a href="index.html#faq">FAQ</a></div>
-      <div class="footer-col"><strong data-de="Rechtliches" data-en="Legal">Legal</strong><a href="privacy.html" data-de="Datenschutz" data-en="Privacy">Privacy</a><a href="terms.html" data-de="Nutzungsbedingungen" data-en="Terms">Terms</a><a href="imprint.html" data-de="Impressum" data-en="Imprint">Imprint</a></div>
-    </div>
-    <div class="copyright">© 2026 Kamilunavo · Piotr Kaminski. AllianceHQ is independent and is not affiliated with, endorsed by, or sponsored by Discord.</div>
+  <div class="container footer-inner">
+    <div class="brand"><img src="assets/logo-128.png" alt=""><span class="brand-copy"><span>AllianceHQ</span><small>by Kamilunavo</small></span></div>
+    <div class="footer-links"><a href="imprint.html">Impressum</a><a href="privacy.html">Datenschutz</a><a href="terms.html">Nutzungsbedingungen</a><a data-link="support" href="#">Support</a><a data-link="dashboard" href="https://dashboard.alliance-hq.com">Dashboard</a></div>
   </div>
 </footer>
-<script src="config.js"></script><script src="app.js"></script>
+<script src="site-config.js"></script><script src="assets/site.js?v=1.0.0"></script>
 </body></html>

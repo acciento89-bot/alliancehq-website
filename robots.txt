@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://alliance-hq.com/sitemap.xml
